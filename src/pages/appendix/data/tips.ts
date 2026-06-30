@@ -65,30 +65,30 @@ export default {
 - 코드를 받을 땐 "각 줄에 주석을 달아 초보도 이해하게"
 - 결과가 길면 "핵심만 3줄로 먼저 요약하고 자세히"
 
-> 개인정보·민감정보는 가능하면 **가린 뒤** 올리고, 교내 정책을 따르세요.`,
+> 개인정보·민감정보는 가능하면 **가린 뒤** 올리고, 기관 보안 정책을 따르세요.`,
       contentEn: `- Upload long PDFs and ask "summarize only the clauses about X."
 - Paste Excel tables and ask "find 3 trends and any odd values."
 - For tables: "use tab-separated so I can paste into Excel."
 - For code: "add comments on each line for beginners."
 - For long output: "3-line summary first, then details."
 
-> Mask personal/sensitive info before uploading; follow campus policy.`,
+> Mask personal/sensitive info before uploading; follow your organization's security policy.`,
     },
     {
       title: '보안·윤리·저작권',
       titleEn: 'Security, Ethics, Copyright',
-      content: `- 학생 개인정보·미공개 연구데이터는 교내 정책에 맞게 신중히 다루기
+      content: `- 학생 개인정보·미공개 연구데이터는 기관 보안 정책에 맞게 신중히 다루기
 - AI가 만든 글·코드도 **사실·표절 여부를 검토**한 뒤 사용
 - 논문·과제에 AI를 썼다면 학회/기관의 **AI 사용 지침**을 확인하고 필요한 경우 밝히기
 - 생성 이미지·자료의 **저작권/라이선스** 확인
-- ChatGPT는 교내 전용이라 일반 ChatGPT보다 데이터 측면에서 안전하지만, 그래도 **민감정보 최소화** 원칙은 동일
+- 업무에 AI를 쓸 때는 **민감정보 최소화** 원칙을 항상 지키세요
 
 > "편리함"과 "책임"은 함께 갑니다. AI는 도구, 판단은 사람.`,
-      contentEn: `- Handle student PII and unpublished data per campus policy.
+      contentEn: `- Handle student PII and unpublished data per your organization's security policy.
 - Review AI-made text/code for accuracy and plagiarism.
 - Follow your venue's AI-use guidelines; disclose when required.
 - Check copyright/license of generated images/materials.
-- ChatGPT is campus-only and safer, but still minimize sensitive data.`,
+- Always minimize sensitive data when using AI for work.`,
     },
   ],
 };

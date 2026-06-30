@@ -11,13 +11,13 @@ export default function Home(): ReactElement {
   const navigate = useNavigate();
   useAOS();
 
-  const stat0 = useCountUp(4);
-  const stat1 = useCountUp(16);
-  const stat2 = useCountUp(32);
-  const stat3 = useCountUp(70);
+  const stat0 = useCountUp(2);
+  const stat1 = useCountUp(8);
+  const stat2 = useCountUp(8);
+  const stat3 = useCountUp(24);
 
   const stats = [
-    { value: stat0.count, label: language === 'ko' ? '전문 과정' : 'Programs', suffix: '' },
+    { value: stat0.count, label: language === 'ko' ? '단계별 과정' : 'Programs', suffix: '' },
     { value: stat1.count, label: language === 'ko' ? '과정당 시간' : 'Hours / Program', suffix: 'h' },
     { value: stat2.count, label: language === 'ko' ? '실습 교시' : 'Practice Sessions', suffix: '' },
     { value: stat3.count, label: language === 'ko' ? '실습 사례' : 'Practice Cases', suffix: '+' },
@@ -39,7 +39,7 @@ export default function Home(): ReactElement {
 
   // 교육 전 준비사항 (Before You Come)
   const prep = [
-    { no: '1', title: isKo ? 'ChatGPT 계정' : 'ChatGPT account', desc: isKo ? '교내 계정으로 ChatGPT 로그인이 되는지 미리 확인해 주세요.' : 'Confirm you can log in to ChatGPT with your campus account.' },
+    { no: '1', title: isKo ? 'ChatGPT 계정' : 'ChatGPT account', desc: isKo ? '본인 계정으로 ChatGPT 로그인이 되는지 미리 확인해 주세요.' : 'Make sure you can log in to ChatGPT in advance.' },
     { no: '2', title: isKo ? '노트북 지참' : 'Bring a laptop', desc: isKo ? '실습용 노트북을 지참하세요. 크롬(Chrome) 브라우저 사용을 권장합니다.' : 'Bring a laptop; Chrome browser recommended.' },
     { no: '3', title: isKo ? '내 업무·연구 자료' : 'Your own material', desc: isKo ? '실제로 다뤄볼 본인 업무 문서나 연구 데이터를 1~2건 준비하면 효과가 큽니다.' : 'Prepare 1–2 real work/research files to practice on.' },
     { no: '4', title: isKo ? '사전 설문' : 'Pre-survey', desc: isKo ? '직무와 관심 분야 사전 설문에 응답하면 과정이 맞춤형으로 운영됩니다.' : 'Complete the short pre-survey so we can tailor the session.' },
@@ -48,19 +48,19 @@ export default function Home(): ReactElement {
   // 교육 안내 (Info cards)
   const infoCards = [
     { kicker: 'Format', rows: [
-      { k: isKo ? '구성' : 'Structure', v: isKo ? '과정당 2일 · 8시간' : '2 days · 16h / program' },
-      { k: isKo ? '하루 일정' : 'Per day', v: isKo ? '8시간 · 4과목' : '8h · 4 modules' },
+      { k: isKo ? '구성' : 'Structure', v: isKo ? '과정당 2일 · 8시간' : '2 days · 8h / program' },
+      { k: isKo ? '하루 일정' : 'Per day', v: isKo ? '4시간 · 2과목' : '4h · 2 modules' },
       { k: isKo ? '비율' : 'Ratio', v: isKo ? '강의 20% · 실습 80%' : 'Lecture 20% · Practice 80%' },
     ] },
     { kicker: 'Who', rows: [
-      { k: isKo ? '대상' : 'Audience', v: isKo ? '대구 교직원·연구자·대학원생' : 'DAEGU faculty, staff & grad students' },
-      { k: isKo ? '수준' : 'Level', v: isKo ? '입문~심화 2개 과정' : '4 programs, intro→advanced' },
-      { k: isKo ? '플랫폼' : 'Platform', v: isKo ? 'ChatGPT (ChatGPT 기반)' : 'ChatGPT' },
+      { k: isKo ? '대상' : 'Audience', v: isKo ? '대구광역시 공무원' : 'Daegu Metropolitan City public officials' },
+      { k: isKo ? '수준' : 'Level', v: isKo ? '중급·고급 2개 과정' : '2 programs, intermediate→advanced' },
+      { k: isKo ? '플랫폼' : 'Platform', v: isKo ? 'ChatGPT · Claude' : 'ChatGPT · Claude' },
     ] },
     { kicker: 'Class', rows: [
-      { k: isKo ? '담당 교수' : 'Instructors', v: isKo ? '이애본, 정동엽' : 'Aebon Lee, Dongyeop Jeong' },
+      { k: isKo ? '담당 교수' : 'Instructors', v: isKo ? '이애본' : 'Aebon Lee' },
       { k: isKo ? '자료열람' : 'Access', v: isKo ? '회원가입·로그인 후' : 'After sign-up & login' },
-      { k: isKo ? '문의' : 'Contact', v: 'aebon@hs.ac.kr' },
+      { k: isKo ? '문의' : 'Contact', v: 'aebon@dreamitbiz.com' },
     ] },
   ];
 
@@ -80,7 +80,7 @@ export default function Home(): ReactElement {
               <h1 className="hero-ed-title" data-aos="fade-up" data-aos-delay="50">
                 {isKo ? 'ChatGPT로 배우는' : 'Learn with ChatGPT'}<br />
                 <span className="accent">{isKo ? '생성형 AI 실무' : 'Hands-on Generative AI'}</span><br />
-                <span className="accent">{isKo ? '2개 과정 · 각 8시간' : '4 Programs · 16 Hours Each'}</span>
+                <span className="accent">{isKo ? '2개 과정 · 각 8시간' : 'Two Programs · 8 Hours Each'}</span>
               </h1>
               <p className="hero-ed-lead" data-aos="fade-up" data-aos-delay="100">
                 {isKo

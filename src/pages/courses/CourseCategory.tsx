@@ -69,8 +69,8 @@ export default function CourseCategory(): ReactElement {
           <div className="program-platform-note">
             <i className="fa-solid fa-shield-halved" />
             <span>{language === 'ko'
-              ? '본 과정은 교내 전용 플랫폼 ChatGPT·Claude에서 진행되며, 모든 실습은 예시 프롬프트로 직접 따라 할 수 있습니다.'
-              : 'This program runs on the campus platform ChatGPT; every practice includes a ready-to-use prompt.'}</span>
+              ? '본 과정은 ChatGPT·Claude·Google Apps Script 등 현업 도구로 진행되며, 모든 실습은 예시 프롬프트로 직접 따라 할 수 있습니다.'
+              : 'This program runs on real-world tools like ChatGPT, Claude and Google Apps Script; every practice includes a ready-to-use prompt.'}</span>
           </div>
         </div>
       </section>

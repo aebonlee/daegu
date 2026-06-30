@@ -378,18 +378,19 @@
   font-size: 36px;
   box-shadow: var(--shadow-md);
 }
-.program-hero-text h1 { font-size: 34px; margin-bottom: 8px; }
+.program-hero-text { flex: 1; min-width: 0; }
+.program-hero-text h1 { font-size: clamp(26px, 3.4vw, 38px); margin-bottom: 8px; }
 .program-hero-tagline {
-  font-size: 18px;
+  font-size: clamp(16px, 1.6vw, 19px);
   font-weight: 600;
   color: var(--primary-blue);
   margin-bottom: 10px;
 }
 .program-hero-desc {
-  font-size: 16px;
+  font-size: clamp(15px, 1.3vw, 17px);
   color: var(--text-secondary);
   line-height: 1.75;
-  max-width: 760px;
+  max-width: min(100%, 1040px);
   margin-bottom: 18px;
 }
 .program-hero-meta {
